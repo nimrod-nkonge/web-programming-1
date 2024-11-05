@@ -1,0 +1,298 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0; /* Add padding for spacing */
+}
+
+nav {
+    background-color: #444; /* Darker background for the nav */
+}
+
+nav ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: center; /* Center items horizontally */
+}
+
+nav ul li {
+    margin: 0 15px; /* Add space between items */
+}
+
+nav ul li a {
+    color: white; /* Link text color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 15px; /* Add padding around links */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+nav ul li a:hover {
+    background-color: #555; /* Change background on hover */
+}
+#offers {
+    text-align: center;
+    margin:50px 0;
+
+}
+#events {
+    text-align: center;
+    margin-left: 50px;
+    padding:25px;
+}
+.eventlist {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Dynamic column layout */
+    gap: 20px; /* Space between drink tiles */    
+}
+.eventtile {
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;    
+}
+.eventtile img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;    
+}
+.eventtile p {
+    font-size: 18px;
+    color: #333;    
+}
+
+
+/* Exclusive Drinks Section */
+#exclusive {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.drinklist {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Dynamic column layout */
+    gap: 20px; /* Space between drink tiles */
+}
+
+.drink-tile {
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.drink-tile img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.drink-tile h3 {
+    margin: 10px 0 5px 0;
+}
+
+.drink-tile p {
+    font-size: 18px;
+    color: #333;
+}
+.footer {
+    font-size: 15px;
+    color:#444;
+    text-align: center;
+    padding: 0;
+    position: relative;
+    margin-top: 50%;
+}
+/*liqour inventory page*/
+
+.sidebarmenu {
+     /* Set the width of the sidebar */
+    background-color: #333; /* Background color */
+    color: #444; /* Text color */
+    height: 80vh; /* Full height */
+    position:absolute; /* Fixed positioning */
+    margin-bottom: 20px;
+    left: 0; /* Align to the left */
+    padding-top: 0; /* removes padding */
+    display: flex;    
+}
+.sidebar {
+    width: 200px;
+    position:absolute;
+    height: 80vh;
+    overflow: hidden;
+    transition: width 0.3s ease;
+}
+nav {
+    background-color: #444;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    padding: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background-color: #575757;
+}
+.menu-item {
+    padding: 0px; /* Padding for each menu item */
+    text-align: center; /* Center align text */
+    cursor: pointer; /* Change cursor on hover */
+    
+    
+   
+}
+
+
+/* Sidebar Styles */
+.menu-list {
+     
+    transition: opacity 0.3s ease;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    
+}
+.menu-list .sidebar .sidebarmenu {
+    width: 200px; /* Fixed width for sidebar */
+    background-color: #444;
+}
+
+
+
+/* Main Content Styles */
+.menu-display {
+    flex-grow: 1; /* Takes up remaining space */
+    background-color: #f4f4f4;
+    margin-left: 200px; /* Space for the sidebar */
+    padding: 20px; /* Padding for content */
+    text-align: left;
+
+    
+}
+.menu-content {
+    margin-left: 200px; /* Margin to make space for the sidebar */
+    padding: 20px;
+    display: none;
+    margin-bottom: auto; 
+    height:max-content;
+    flex: 1;
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+}
+.menu-content h2,h4 {
+    text-align: left;
+}
+
+.sidebar.collapsed {
+    width: 20px; /* Adjust to your preferred collapsed width */
+    opacity:40%;
+}
+.sidebar.collapsed .menu-list {
+    opacity: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidebarmenu {
+        flex-direction: column; /* Stack sidebar and content on smaller screens */
+        width: 100%;
+    }
+    .sidebar {
+        width: 100%
+    }
+   
+
+    .menu-display {
+        width: 100%;
+    }
+}
+
+#liqourlib {
+    text-align: left;
+    margin: 50px 0; 
+      
+}
+#liqourlib h4{
+    font-size: 20px;
+}
+.poplist {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Dynamic column layout */
+    gap: 20px; /* Space between drink tiles */   
+    padding-left: 0;
+}
+.poptile {
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;    
+}
+.poptile img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;    
+}
+.poptile p {
+    font-size: 18px;
+    color: #333;    
+}
+/*smooth scrolling element*/
+html {
+    scroll-behavior: smooth;
+}
+
+/*,,,,,,,,,,,,,,,,,events page,,,,,,,,,,,,,,,,,*/
+#liveevents {
+    text-align: center;
+   
+    margin-left: 50px;
+    padding:25px;
+}
+#liveevents h1 {
+    padding: 20px;
+    
+}
+#liveevents h2{
+    text-align: left;
+    margin: 20px 0;
+}
+.eventlistrecap {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Dynamic column layout */
+    gap: 20px; /* Space between drink tiles */    
+}
+#header {
+text-align: left;
+margin-left: 50px;
+padding:25px;
+}
+/*gallery page*/
+.gal {
+    height:max-content;
+    margin-left: 50px;
+    padding:25px;
+}
+
+
